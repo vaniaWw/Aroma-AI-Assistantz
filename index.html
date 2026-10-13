@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aroma Bakery – Roti Segar Setiap Hari</title>
+
+  <!-- Bootstrap 5 -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+
+  <!-- Bootstrap Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+  />
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ================================================================
+     NAVBAR
+     ================================================================ -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+  <div class="container">
+    <!-- Brand -->
+    <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+      <span style="font-size:1.6rem;">🍞</span>
+      Aroma Bakery
+    </a>
+
+    <!-- Toggler -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarMain"
+      aria-controls="navbarMain"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Links -->
+    <div class="collapse navbar-collapse" id="navbarMain">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-1">
+        <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
+        <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+        <li class="nav-item"><a class="nav-link" href="#cabang">Cabang</a></li>
+        <li class="nav-item"><a class="nav-link" href="#ai-dashboard">AI Dashboard</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
+      </ul>
+      <a href="#ai-dashboard" class="btn btn-primary-custom ms-lg-3 mt-2 mt-lg-0">
+        <i class="bi bi-robot me-1"></i> Tanya AI
+      </a>
+    </div>
+  </div>
+</nav>
+
+
+<!-- ================================================================
+     HERO CAROUSEL
+     ================================================================ -->
+<section id="hero">
+  <div
+    id="heroCarousel"
+    class="carousel slide carousel-fade"
+    data-bs-ride="carousel"
+    data-bs-interval="4500"
+  >
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <!-- Slides -->
+    <div class="carousel-inner">
+
+      <!-- Slide 1 – Roti artisan -->
+      <div class="carousel-item active">
+        <img
+          src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=1400&auto=format&fit=crop&q=80"
+          alt="Roti artisan segar dari Aroma Bakery"
+          loading="eager"
+        />
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="fw-bold">Roti Segar Setiap Pagi</h2>
+          <p>Dipanggang dengan cinta, dihidangkan dengan kehangatan.</p>
+          <a href="#menu" class="btn btn-primary-custom mt-2">Lihat Menu</a>
+        </div>
+      </div>
+
+      <!-- Slide 2 – Berbagai pilihan roti -->
+      <div class="carousel-item">
+        <img
+          src="https://images.unsplash.com/photo-1549931319-a545dcf3bc7c?w=1400&auto=format&fit=crop&q=80"
+          alt="Berbagai pilihan roti dan pastri"
+          loading="lazy"
+        />
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="fw-bold">Pilihan Rasa yang Kaya</h2>
+          <p>Dari Roti Cokelat hingga Bika Ambon — ada untuk setiap selera.</p>
+          <a href="#menu" class="btn btn-primary-custom mt-2">Jelajahi Rasa</a>
+        </div>
+      </div>
+
+      <!-- Slide 3 – Suasana bakery -->
+      <div class="carousel-item">
+        <img
+          src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=1400&auto=format&fit=crop&q=80"
+          alt="Suasana hangat di dalam Aroma Bakery"
+          loading="lazy"
+        />
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="fw-bold">Temukan Cabang Terdekat</h2>
+          <p>Hadir di Halat, Karya, dan Krakatau — siap melayani kamu.</p>
+          <a href="#cabang" class="btn btn-primary-custom mt-2">Cek Cabang</a>
+        </div>
+      </div>
+
+    </div><!-- /.carousel-inner -->
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+
+
+<!-- ================================================================
+     ABOUT STRIP
+     ================================================================ -->
+<section id="about" class="py-5">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h2 class="section-title">Tentang Aroma Bakery</h2>
+      <p class="text-muted mt-3 mx-auto" style="max-width:580px;">
+        Sejak 2010 kami menghadirkan roti berkualitas tinggi dengan bahan-bahan pilihan, dipanggang segar setiap hari di tiga cabang kami di Medan.
+      </p>
+    </div>
+
+    <div class="row g-4 text-center">
+      <div class="col-6 col-md-3">
+        <div class="about-icon mb-2"><i class="bi bi-shop"></i></div>
+        <div class="fw-semibold">3 Cabang</div>
+        <div class="text-muted small">di Kota Medan</div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="about-icon mb-2"><i class="bi bi-basket2-fill"></i></div>
+        <div class="fw-semibold">7+ Varian</div>
+        <div class="text-muted small">roti & kue pilihan</div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="about-icon mb-2"><i class="bi bi-clock-fill"></i></div>
+        <div class="fw-semibold">Panggang Pagi</div>
+        <div class="text-muted small">selalu fresh</div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="about-icon mb-2"><i class="bi bi-award-fill"></i></div>
+        <div class="fw-semibold">14+ Tahun</div>
+        <div class="text-muted small">melayani pelanggan</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ================================================================
+     MENU
+     ================================================================ -->
+<section id="menu" class="py-5 bg-white">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title">Menu Unggulan</h2>
+      <p class="text-muted mt-3">Roti-roti terfavorit pelanggan setia kami</p>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- Card 1 -->
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card h-100">
+          <img
+            src="https://images.unsplash.com/photo-1606101273945-e9eba5c48078?w=600&auto=format&fit=crop&q=80"
+            class="card-img-top"
+            alt="Roti Cokelat"
+            loading="lazy"
+          />
+          <div class="card-body">
+            <span class="badge-primary-custom mb-2 d-inline-block">Best Seller</span>
+            <h5 class="card-title">Roti Cokelat</h5>
+            <p class="card-text text-muted small">Lembut dengan isian cokelat leleh yang kaya, pilihan favorit semua kalangan.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card h-100">
+          <img
+            src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=600&auto=format&fit=crop&q=80"
+            class="card-img-top"
+            alt="Roti Keju"
+            loading="lazy"
+          />
+          <div class="card-body">
+            <span class="badge-primary-custom mb-2 d-inline-block">Populer</span>
+            <h5 class="card-title">Roti Keju</h5>
+            <p class="card-text text-muted small">Roti empuk bertabur keju mozzarella, gurih dan menggugah selera.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card h-100">
+          <img
+            src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&auto=format&fit=crop&q=80"
+            class="card-img-top"
+            alt="Roti Kopi"
+            loading="lazy"
+          />
+          <div class="card-body">
+            <span class="badge-primary-custom mb-2 d-inline-block">New</span>
+            <h5 class="card-title">Roti Kopi</h5>
+            <p class="card-text text-muted small">Perpaduan aroma kopi arabika dengan roti lembut, sempurna untuk pagi hari.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card h-100">
+          <img
+            src="https://images.unsplash.com/photo-1517433670267-08bbd4be890f?w=600&auto=format&fit=crop&q=80"
+            class="card-img-top"
+            alt="Bolu Gulung Nanas"
+            loading="lazy"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Bolu Gulung Nanas</h5>
+            <p class="card-text text-muted small">Bolu lembut dengan selai nanas segar, cocok untuk camilan sore hari.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card h-100">
+          <img
+            src="https://images.unsplash.com/photo-1585478259715-876acc5be8eb?w=600&auto=format&fit=crop&q=80"
+            class="card-img-top"
+            alt="Roti Abon Sapi"
+            loading="lazy"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Roti Abon Sapi</h5>
+            <p class="card-text text-muted small">Isian abon sapi premium di atas roti manis, paduan gurih dan manis yang sempurna.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card h-100">
+          <img
+            src="https://images.unsplash.com/photo-1587740908075-9e245070dfaa?w=600&auto=format&fit=crop&q=80"
+            class="card-img-top"
+            alt="Bika Ambon"
+            loading="lazy"
+          />
+          <div class="card-body">
+            <span class="badge-primary-custom mb-2 d-inline-block">Khas Medan</span>
+            <h5 class="card-title">Bika Ambon</h5>
+            <p class="card-text text-muted small">Kue tradisional khas Medan dengan tekstur berserat dan rasa manis legit.</p>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /.row -->
+  </div>
+</section>
+
+
+<!-- ================================================================
+     CABANG
+     ================================================================ -->
+<section id="cabang" class="py-5" style="background:#fdf8f0;">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title">Cabang Kami</h2>
+      <p class="text-muted mt-3">Temukan Aroma Bakery di tiga lokasi strategis di Medan</p>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+
+      <div class="col-12 col-md-4">
+        <div class="card border-0 shadow-sm h-100 text-center p-4">
+          <div class="about-icon mb-3"><i class="bi bi-geo-alt-fill"></i></div>
+          <h5 class="fw-semibold">Cabang Halat</h5>
+          <p class="text-muted small mb-2">Jl. Halat No. 12, Medan</p>
+          <div class="d-flex justify-content-center gap-2 mt-auto">
+            <span class="badge bg-success-subtle text-success border border-success-subtle">Buka 07:00 – 21:00</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4">
+        <div class="card border-0 shadow-sm h-100 text-center p-4">
+          <div class="about-icon mb-3"><i class="bi bi-geo-alt-fill"></i></div>
+          <h5 class="fw-semibold">Cabang Karya</h5>
+          <p class="text-muted small mb-2">Jl. Karya No. 45, Medan</p>
+          <div class="d-flex justify-content-center gap-2 mt-auto">
+            <span class="badge bg-success-subtle text-success border border-success-subtle">Buka 07:00 – 21:00</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4">
+        <div class="card border-0 shadow-sm h-100 text-center p-4">
+          <div class="about-icon mb-3"><i class="bi bi-geo-alt-fill"></i></div>
+          <h5 class="fw-semibold">Cabang Krakatau</h5>
+          <p class="text-muted small mb-2">Jl. Krakatau No. 88, Medan</p>
+          <div class="d-flex justify-content-center gap-2 mt-auto">
+            <span class="badge bg-success-subtle text-success border border-success-subtle">Buka 07:00 – 21:00</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ================================================================
+     AI INVENTORY DASHBOARD
+     ================================================================ -->
+<section id="ai-dashboard" class="py-5">
+  <div class="container">
+
+    <!-- Section Header -->
+    <div class="text-center mb-5">
+      <h2 class="section-title">
+        <i class="bi bi-robot me-2" style="font-size:1.6rem;"></i>
+        AI Inventory Dashboard
+      </h2>
+      <p class="mt-3" style="color:#e0c99a; max-width:600px; margin:auto;">
+        Pantau stok real-time dan konsultasikan kebutuhan restok dengan Aroma AI Assistant — asisten cerdas berbasis Langflow.
+      </p>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- ============================================================
+           LEFT COLUMN – Stats + Inventory Table
+           ============================================================ -->
+      <div class="col-12 col-xl-6 d-flex flex-column gap-4">
+
+        <!-- Stat Badges -->
+        <div class="dashboard-card">
+          <h6 class="text-uppercase fw-semibold mb-3" style="color:#e0c99a; font-size:.75rem; letter-spacing:1px;">
+            <i class="bi bi-bar-chart-fill me-1"></i> Ringkasan Stok
+          </h6>
+          <div class="row g-3">
+            <div class="col-6 col-sm-4">
+              <div class="stat-badge">
+                <div class="stat-number" data-stat="cabang">3</div>
+                <div class="stat-label">Total Cabang</div>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4">
+              <div class="stat-badge">
+                <div class="stat-number" data-stat="produk">21</div>
+                <div class="stat-label">Produk Terdaftar</div>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4">
+              <div class="stat-badge danger">
+                <div class="stat-number" data-stat="habis">3</div>
+                <div class="stat-label">Stok Habis ⚠️</div>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4">
+              <div class="stat-badge danger">
+                <div class="stat-number" data-stat="kritis">6</div>
+                <div class="stat-label">Stok Kritis (&lt;10)</div>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4">
+              <div class="stat-badge">
+                <div class="stat-number" data-stat="unit">269</div>
+                <div class="stat-label">Total Unit Tersedia</div>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4">
+              <div class="stat-badge">
+                <div class="stat-number" data-stat="maxstok">45</div>
+                <div class="stat-label">Stok Tertinggi</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Inventory Table -->
+        <div class="dashboard-card flex-grow-1">
+          <div class="d-flex align-items-center justify-content-between mb-3">
+            <h6 class="text-uppercase fw-semibold mb-0" style="color:#e0c99a; font-size:.75rem; letter-spacing:1px;">
+              <i class="bi bi-table me-1"></i> Tabel Stok Lengkap
+            </h6>
+            <!-- Filter Cabang -->
+            <select id="filterCabang" class="form-select form-select-sm"
+              style="width:auto; background:#2a1e12; border-color:rgba(200,134,10,.35); color:#f5e6c8; font-size:.78rem;">
+              <option value="all">Semua Cabang</option>
+              <option value="Halat">Cabang Halat</option>
+              <option value="Karya">Cabang Karya</option>
+              <option value="Krakatau">Cabang Krakatau</option>
+            </select>
+          </div>
+
+          <div class="inv-table-wrap">
+            <table class="inv-table" id="inventoryTable">
+              <thead>
+                <tr>
+                  <th>Tanggal</th>
+                  <th>Cabang</th>
+                  <th>Produk</th>
+                  <th style="text-align:right">Kirim</th>
+                  <th style="text-align:right">Terjual</th>
+                  <th style="text-align:right">Sisa</th>
+                </tr>
+              </thead>
+              <tbody id="inventoryBody">
+                <!-- Rows injected by JS -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div><!-- /.col LEFT -->
+
+
+      <!-- ============================================================
+           RIGHT COLUMN – Chat UI
+           ============================================================ -->
+      <div class="col-12 col-xl-6">
+        <div class="chat-wrapper">
+
+          <!-- Chat Header -->
+          <div class="chat-header">
+            <div class="avatar">🤖</div>
+            <div class="info">
+              <div class="name">Aroma AI Assistant</div>
+              <div class="status">
+                <span id="statusDot" style="display:inline-block;width:7px;height:7px;border-radius:50%;background:#4ade80;margin-right:4px;vertical-align:middle;"></span>
+                <span id="statusText">Online – siap membantu</span>
+              </div>
+            </div>
+            <div class="ms-auto d-flex gap-2">
+              <button
+                class="btn btn-sm"
+                style="background:rgba(255,255,255,.15); color:#fff; border:none; border-radius:8px; font-size:.75rem;"
+                onclick="clearChat()"
+                title="Hapus riwayat chat"
+              >
+                <i class="bi bi-trash"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Quick Prompt Chips -->
+          <div class="quick-prompts">
+            <button class="chip" data-prompt="Stok apa yang habis sekarang?">🔴 Stok habis?</button>
+            <button class="chip" data-prompt="Produk mana yang perlu segera direstok?">⚠️ Perlu restok?</button>
+            <button class="chip" data-prompt="Berikan laporan stok Cabang Halat">📋 Laporan Halat</button>
+            <button class="chip" data-prompt="Berikan laporan stok Cabang Karya">📋 Laporan Karya</button>
+            <button class="chip" data-prompt="Berikan laporan stok Cabang Krakatau">📋 Laporan Krakatau</button>
+            <button class="chip" data-prompt="Bandingkan stok semua cabang">📊 Bandingkan cabang</button>
+            <button class="chip" data-prompt="Produk apa yang paling laku hari ini di semua cabang?">🏆 Terlaris hari ini</button>
+            <button class="chip" data-prompt="Cabang mana yang paling banyak menjual roti hari ini?">🏅 Cabang terbaik</button>
+            <button class="chip" data-prompt="Rekomendasikan strategi pengadaan minggu ini">💡 Strategi pengadaan</button>
+            <button class="chip" data-prompt="Berikan ringkasan eksekutif stok seluruh cabang hari ini">📝 Ringkasan eksekutif</button>
+          </div>
+
+          <!-- Messages Area -->
+          <div class="chat-messages" id="chatMessages" aria-live="polite" aria-label="Riwayat percakapan"></div>
+
+          <!-- Input Area -->
+          <div class="chat-input-area">
+            <textarea
+              id="chatInput"
+              rows="1"
+              placeholder="Ketik pertanyaan tentang stok... (Enter untuk kirim)"
+              aria-label="Input pesan"
+            ></textarea>
+            <button id="sendBtn" aria-label="Kirim pesan">
+              <i class="bi bi-send-fill"></i>
+            </button>
+          </div>
+
+        </div><!-- /.chat-wrapper -->
+      </div><!-- /.col RIGHT -->
+
+    </div><!-- /.row -->
+  </div>
+</section>
+
+
+<!-- ================================================================
+     CONTACT / FOOTER
+     ================================================================ -->
+<section id="contact" class="py-5 bg-white">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h2 class="section-title">Hubungi Kami</h2>
+    </div>
+    <div class="row g-4 justify-content-center text-center">
+      <div class="col-12 col-md-4">
+        <i class="bi bi-telephone-fill text-warning fs-3 mb-2 d-block"></i>
+        <div class="fw-semibold">Telepon</div>
+        <div class="text-muted small">+62 61 1234 5678</div>
+      </div>
+      <div class="col-12 col-md-4">
+        <i class="bi bi-envelope-fill text-warning fs-3 mb-2 d-block"></i>
+        <div class="fw-semibold">Email</div>
+        <div class="text-muted small">halo@aromabakery.id</div>
+      </div>
+      <div class="col-12 col-md-4">
+        <i class="bi bi-instagram text-warning fs-3 mb-2 d-block"></i>
+        <div class="fw-semibold">Instagram</div>
+        <div class="text-muted small">@aromabakery.id</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="py-4 text-center">
+  <div class="container">
+    <div class="mb-2" style="font-family:'Playfair Display',serif; font-size:1.2rem;">
+      🍞 Aroma Bakery
+    </div>
+    <p class="small mb-1">Roti Segar · Rasa Terbaik · Setiap Hari</p>
+    <p class="small mb-0" style="opacity:.6;">
+      &copy; 2026 Aroma Bakery. Ditenagai oleh
+      <a href="#ai-dashboard">Aroma AI Assistant</a>.
+    </p>
+  </div>
+</footer>
+
+
+<!-- ================================================================
+     SCRIPTS
+     ================================================================ -->
+
+<!-- Bootstrap 5 Bundle (includes Popper) -->
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc4s9bIOgUxi8T/jzmLw0+MJn+7pIRtAnfR6NqVEm/9"
+  crossorigin="anonymous"
+></script>
+
+<!-- Inventory Table Renderer -->
+<script>
+  /* ---------------------------------------------------------------
+     Inventory data – dimuat otomatis dari CSV stok-aroma.txt
+     --------------------------------------------------------------- */
+
+  // Kita re-use loadStokData dari chat.js, tapi karena chat.js belum
+  // diload saat inline script ini jalan, kita fetch sendiri di sini.
+  async function loadInventoryFromCSV() {
+    try {
+      const res  = await fetch("stok-aroma.txt");
+      const text = await res.text();
+      const rows = text.trim().split("\n").map(r => r.trim()).filter(Boolean);
+      // Skip header
+      return rows.slice(1).map(r => {
+        const [tanggal, cabang, produk, dikirim, terjual, stok] = r.split(",").map(s => s.trim());
+        return { tanggal, cabang, produk, dikirim: +dikirim, terjual: +terjual, stok: +stok };
+      });
+    } catch {
+      return null;
+    }
+  }
+
+  function stockClass(s) {
+    if (s === 0)  return ["stock-zero", "Habis"];
+    if (s < 10)   return ["stock-low",  "Kritis"];
+    return             ["stock-ok",   "Aman"];
+  }
+
+  async function renderTable(filter) {
+    const tbody = document.getElementById("inventoryBody");
+    tbody.innerHTML = `<tr><td colspan="6" style="text-align:center;color:#888;padding:1rem;">Memuat data...</td></tr>`;
+
+    const data = await loadInventoryFromCSV();
+    if (!data) {
+      tbody.innerHTML = `<tr><td colspan="6" style="text-align:center;color:#f87171;padding:1rem;">Gagal memuat stok-aroma.txt</td></tr>`;
+      return;
+    }
+
+    // Ambil tanggal terbaru saja (untuk tampil terkini)
+    const latestDate = data.reduce((max, r) => r.tanggal > max ? r.tanggal : max, "");
+    const filtered   = data
+      .filter(r => r.tanggal === latestDate)
+      .filter(r => filter === "all" || r.cabang === filter);
+
+    if (filtered.length === 0) {
+      tbody.innerHTML = `<tr><td colspan="6" style="text-align:center;color:#888;padding:1rem;">Tidak ada data</td></tr>`;
+      return;
+    }
+
+    tbody.innerHTML = filtered.map(r => {
+      const [cls, label] = stockClass(r.stok);
+      return `<tr>
+        <td>${r.tanggal}</td>
+        <td>Cb. ${r.cabang}</td>
+        <td>${r.produk}</td>
+        <td style="text-align:right">${r.dikirim}</td>
+        <td style="text-align:right">${r.terjual}</td>
+        <td class="${cls}" style="text-align:right;font-weight:600">${r.stok} <span style="font-size:.7rem">(${label})</span></td>
+      </tr>`;
+    }).join("");
+
+    // Update stat badges
+    updateStats(data.filter(r => r.tanggal === latestDate));
+  }
+
+  function updateStats(data) {
+    const total   = data.length;
+    const habis   = data.filter(r => r.stok === 0).length;
+    const kritis  = data.filter(r => r.stok > 0 && r.stok < 10).length;
+    const unitSum = data.reduce((s, r) => s + r.stok, 0);
+    const maxStok = Math.max(...data.map(r => r.stok));
+    const cabang  = new Set(data.map(r => r.cabang)).size;
+
+    const el = id => document.querySelector(`[data-stat="${id}"]`);
+    if (el("cabang"))  el("cabang").textContent  = cabang;
+    if (el("produk"))  el("produk").textContent  = total;
+    if (el("habis"))   el("habis").textContent   = habis;
+    if (el("kritis"))  el("kritis").textContent  = kritis;
+    if (el("unit"))    el("unit").textContent    = unitSum;
+    if (el("maxstok")) el("maxstok").textContent = maxStok;
+  }
+
+  // Initial render
+  renderTable("all");
+
+  // Filter change
+  document.getElementById("filterCabang").addEventListener("change", function () {
+    renderTable(this.value);
+  });
+
+  /* ---------------------------------------------------------------
+     Clear chat helper (called from button in header)
+     --------------------------------------------------------------- */
+  function clearChat() {
+    const msgs = document.getElementById("chatMessages");
+    msgs.innerHTML = "";
+    // Re-append welcome after a beat
+    setTimeout(() => {
+      const msg = document.createElement("div");
+      msg.classList.add("msg", "bot");
+      const bubble = document.createElement("div");
+      bubble.classList.add("bubble");
+      bubble.innerHTML =
+        "👋 Riwayat chat telah dihapus. Ada yang bisa saya bantu? 🍞";
+      const time = document.createElement("span");
+      time.classList.add("msg-time");
+      time.textContent = new Date().toLocaleTimeString("id-ID",{hour:"2-digit",minute:"2-digit"});
+      msg.appendChild(bubble);
+      msg.appendChild(time);
+      msgs.appendChild(msg);
+    }, 300);
+  }
+</script>
+
+<!-- Chat / Langflow integration -->
+<script src="chat.js"></script>
+
+</body>
+</html>

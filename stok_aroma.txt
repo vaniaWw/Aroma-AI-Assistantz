@@ -1,0 +1,43 @@
+Tanggal,Cabang,Nama Roti,Dikirim,Terjual,Sisa
+2026-10-12,Halat,Roti Cokelat,45,12,33
+2026-10-12,Halat,Roti Keju,25,15,10
+2026-10-12,Halat,Roti Abon Sapi,20,18,2
+2026-10-12,Halat,Roti Sosis,15,15,0
+2026-10-12,Halat,Roti Kopi,35,15,20
+2026-10-12,Halat,Bolu Gulung Nanas,10,4,6
+2026-10-12,Halat,Bika Ambon,20,8,12
+2026-10-12,Karya,Roti Cokelat,35,15,20
+2026-10-12,Karya,Roti Keju,20,14,6
+2026-10-12,Karya,Roti Abon Sapi,35,10,25
+2026-10-12,Karya,Roti Sosis,20,10,10
+2026-10-12,Karya,Roti Kopi,50,12,38
+2026-10-12,Karya,Bolu Gulung Nanas,15,7,8
+2026-10-12,Karya,Bika Ambon,15,10,5
+2026-10-12,Krakatau,Roti Cokelat,40,12,28
+2026-10-12,Krakatau,Roti Keju,30,12,18
+2026-10-12,Krakatau,Roti Abon Sapi,20,15,5
+2026-10-12,Krakatau,Roti Sosis,15,12,3
+2026-10-12,Krakatau,Roti Kopi,30,15,15
+2026-10-12,Krakatau,Bolu Gulung Nanas,12,12,0
+2026-10-12,Krakatau,Bika Ambon,18,10,8
+2026-10-13,Halat,Roti Cokelat,50,10,40
+2026-10-13,Halat,Roti Keju,30,18,12
+2026-10-13,Halat,Roti Abon Sapi,25,20,5
+2026-10-13,Halat,Roti Sosis,20,20,0
+2026-10-13,Halat,Roti Kopi,40,18,22
+2026-10-13,Halat,Bolu Gulung Nanas,15,7,8
+2026-10-13,Halat,Bika Ambon,25,10,15
+2026-10-13,Karya,Roti Cokelat,30,12,18
+2026-10-13,Karya,Roti Keju,20,16,4
+2026-10-13,Karya,Roti Abon Sapi,40,10,30
+2026-10-13,Karya,Roti Sosis,25,13,12
+2026-10-13,Karya,Roti Kopi,60,15,45
+2026-10-13,Karya,Bolu Gulung Nanas,20,10,10
+2026-10-13,Karya,Bika Ambon,15,12,3
+2026-10-13,Krakatau,Roti Cokelat,40,15,25
+2026-10-13,Krakatau,Roti Keju,35,15,20
+2026-10-13,Krakatau,Roti Abon Sapi,25,17,8
+2026-10-13,Krakatau,Roti Sosis,20,15,5
+2026-10-13,Krakatau,Roti Kopi,35,20,15
+2026-10-13,Krakatau,Bolu Gulung Nanas,15,15,0
+2026-10-13,Krakatau,Bika Ambon,20,14,6
